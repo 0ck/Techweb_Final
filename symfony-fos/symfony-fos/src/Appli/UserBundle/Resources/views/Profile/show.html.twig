@@ -1,8 +1,18 @@
 {% extends "AppliUserBundle::layout.html.twig" %}
 
 {% block fos_user_content %}
-
-{% include "AppliUserBundle:Profile:show_content.html.twig" %}
+<div class="container">
+<div class="panel panel-info">
+<div class="panel-heading">
+    <h3 class="panel-title">Profil</h3>
+  </div>
+  <div class="panel-body">
+    {% include "AppliUserBundle:Profile:show_content.html.twig" %}
 <a href="{{ path('fos_user_profile_edit') }}" role="button" class="btn btn-default" type="btn" id="add_tache" name="add_tache" value=""> Editer mon profile </a>
+  </div>
+
+</div>
+</div>
+
 
 {% endblock fos_user_content %}

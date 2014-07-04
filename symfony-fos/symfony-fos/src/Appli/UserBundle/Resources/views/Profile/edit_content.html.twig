@@ -1,0 +1,8 @@
+{% trans_default_domain 'AppliUserBundle' %}
+
+<form action="{{ path('fos_user_profile_edit') }}" {{ form_enctype(form) }} method="POST" style="width:20%;margin: 0 auto;"class="fos_user_profile_edit">
+    {{ form_widget(form) }}
+    <div>
+        <input type="submit" value="{{ 'profile.edit.submit'|trans }}" />
+    </div>
+</form>
